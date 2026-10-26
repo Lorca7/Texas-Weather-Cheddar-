@@ -1,0 +1,42 @@
+{
+  "name": "texas-weather-cheddar",
+  "version": "1.0.0",
+  "description": "Bespoke generative weather broadcast for the state of Texas \u2014 live NOAA data driving an ambient score and a media-collage visual engine, streamable to YouTube.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "build:geo": "node scripts/build-geo.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lorca7/Texas-Weather-Cheddar-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lorca7/Texas-Weather-Cheddar-/issues"
+  },
+  "homepage": "https://github.com/Lorca7/Texas-Weather-Cheddar-#readme",
+  "dependencies": {
+    "express": "^4.22.3",
+    "multer": "^1.4.4",
+    "pngjs": "^7.0.0",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "topojson-client": "^3.1.0",
+    "topojson-simplify": "^3.0.3",
+    "us-atlas": "^3.0.1"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

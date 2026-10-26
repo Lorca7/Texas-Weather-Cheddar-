@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Texas Weather Cheddar</title>
+<meta name="description" content="A generative weather broadcast for the state of Texas: live NOAA data driving an ambient score and a media-collage visual engine.">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>⛈</text></svg>">
+</head>
+<body>
+  <main class="stage-wrap">
+    <canvas id="stage" width="1280" height="720" aria-label="Live Texas weather, rendered as a media collage"></canvas>
+
+    <div id="banner" class="banner" role="status" aria-live="polite"></div>
+
+    <div id="audio-gate" class="gate">
+      <div class="gate__box">
+        <h2>Sound</h2>
+        <p>Browsers only let audio start after a click. The score is generated live from the weather.</p>
+        <button id="audio-gate-btn" class="btn btn--go" type="button">Enable the score</button>
+      </div>
+    </div>
+
+    <button id="panel-toggle" class="panel-toggle" type="button" title="Console (c)">CONSOLE</button>
+    <div id="hud" class="hud"></div>
+  </main>
+
+  <aside id="panel" class="panel" aria-label="Operator console"></aside>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

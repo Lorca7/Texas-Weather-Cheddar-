@@ -1,0 +1,17 @@
+node_modules/
+
+# Operator state — local to each install, not source
+data/show.json
+data/stations.cache.json
+media/uploads/*
+!media/uploads/.gitkeep
+media/library.json
+recordings/
+
+# Env
+.env
+.env.local
+
+# OS / editor
+.DS_Store
+*.log
